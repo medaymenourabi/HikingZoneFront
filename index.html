@@ -26,7 +26,10 @@
 
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css">
+  <link
+     rel="stylesheet"
+     href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -54,7 +57,7 @@
 		<span class="icon-bar"></span>
 		</button>
 		<!-- Your Logo -->
-		<a href="#hero" class="navbar-brand">RUN CHARITY <span class="lighter">LITE</span></a>
+		<a href="#hero" class="navbar-brand">Hiking<span class="lighter">Zone</span></a>
 	</div>
 	<!-- Start Navigation -->
 	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
@@ -76,6 +79,18 @@
 		</li>
 		<li>
 		<a href="#contactarea">Contact</a>
+		</li>
+    <li >
+      <a data-toggle="dropdown" >
+      Sign In/Sign Up
+    </a>
+      <ul class="dropdown-menu">
+        <li><a data-toggle="modal" data-target="#Signinmodal">Sign In </a></li>
+          <li><a data-toggle="modal" data-target="#Signinmodal">Sign Up </a></li>
+      </ul>
+    </li>
+    <li>
+
 		</li>
 	</ul>
 	</nav>
@@ -593,6 +608,8 @@
 <!-- Bootstrap core JavaScript
 	================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script>window.mdc.autoInit();</script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
