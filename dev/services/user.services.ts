@@ -16,18 +16,17 @@ public AddUser(username :string,email :string,password :string){
       res=>res.json()
 );
 }
-
-
-  Test(){
-    var json = JSON.stringify({var1: 'test',var2:3});
-    var params = "json="+json;
+  public Authentification(email :string,password :string){
+    var json = JSON.stringify({email:email,password:password});
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
-    return this._http.post("http://validate.jsontest.com",params, {
+    return this._http.post("http://127.0.0.1:8000/api/signin",json, {
       headers: headers
     }).map(
             res=>res.json()
     );
   }
+
+
 
 }
