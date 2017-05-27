@@ -14,8 +14,10 @@ public AddUser(username :string,email :string,password :string){
     headers: headers
   }).map(
       res=>res.json()
-  );
+);
 }
+
+
   Test(){
     var json = JSON.stringify({var1: 'test',var2:3});
     var params = "json="+json;
